@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
+</head>
+
+<body>
+    <h1 style="margin-top:1.6rem;font-size:2.5rem;text-align:center;color:rgb(253, 11, 11)">Calculator</h1>
+    <section id="main">
+        <div class="container">
+            <div class="display">
+                <input class="form-control" name="display" type="text">
+            </div>
+            <div class="components">
+                <div class="row1">
+                    <button onclick="deleteLast()"  class="btn1">Del</button>
+                    <button onclick="clearAll()" class="btn1">Clear</button>
+                    <input type="button" class="btn1" value="+" onclick="append('+')">
+                    <input type="button" class="btn1" value="-" onclick="append('-')">
+                </div>
+                <div class="left-part">
+                    <div>
+                        <button onclick="append('1')" class="btn"><b>1</b></button>
+                        <button onclick="append('2')" class="btn"><b>2</b></button>
+                        <button onclick="append('3')" class="btn"><b>3</b></button>
+                        <!-- <input type="button" class="btn" value="+" onclick="append('+')">
+                        <input type="button" class="btn" value="-" onclick="append('-')"> -->
+                        <input type="button" class="btn" value="/" onclick="append('/')">
+                    </div>
+                    <div>
+                        <button onclick="append('4')" class="btn"><b>4</b></button>
+                        <button onclick="append('5')" class="btn"><b>5</b></button>
+                        <button onclick="append('6')" class="btn"><b>6</b></button>
+                        
+                        <input type="button" class="btn" value="X" onclick="append('*')">
+                    </div>
+                    <div>
+                        <button onclick="append('7')" class="btn"><b>7</b></button>
+                        <button onclick="append('8')" class="btn"><b>8</b></button>
+                        <button onclick="append('9')" class="btn"><b>9</b></button>
+                        <input type="button" class="btn" value="%" onclick="append('%')">
+                        
+                    </div>
+                </div>
+                <div class="row3">
+                    <button onclick="append('.')" style="font-size:40px"><b>.</b></button>
+                    <button onclick="append('0')" style="font-size:35px">0</button>
+                    <button type="button" onclick="setFactMode()"><b>!</b></button>
+                    <button onclick="calculate()" style="width:200px;font-size:35px">Enter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./index.js"></script>
+
+</html>

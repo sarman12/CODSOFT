@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">S Arman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience1">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+
+    </nav>
+    <div id="div-dark">
+          <i style="cursor:pointer" id="icon-dark" class="fa-solid fa-moon"></i>
+    </div>
+    <nav id="hamburger-nav">
+      <div class="logo">S Arman</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience1" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          
+
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+
+      <div class="home__img">
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sahanee Arman</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume sahanee 2.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+
+          <a target="_blank" href="https://www.linkedin.com/in/s-arman/"><i id='linkedin' class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/sarman12"><i id='linkedin' class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://twitter.com/sahanee33743"><i id='linkedin' class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    
+
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="home__img">
+          <img src="./assets/sahanee.png" alt="Profile picture" class="about-pic" />
+        </div>
+     
+      <div class="about-details-container">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti dolor exercitationem iusto
+                earum officiis optio harum, nemo minima, voluptatum accusantium iure consequuntur ipsam ut ullam,
+                quas eveniet non adipisci esse? Sequi consectetur dolore odit nostrum explicabo officiis architecto
+                veniam.</p>
+                          <div class="tab-titles">
+                      <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <!-- <p onhover='opentab()'></p> -->
+
+                      </div>
+                      <div class="tab-contentes active-tab" id="skills">
+                        <ul>
+                          <li><span>Programming</span><br>Competitive ProGrammer</li>
+                          <li><span>Web Development</span><br>Full Stack Web DevoLoper</li>
+                          <li><span>AI/ML</span><br>Machine Learning</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contentes" id="experience">
+                        <ul>
+                          <li><span>LeetCode</span><br>Total Question Solved->100</li>
+                          <li><span>GeeksForGeeks</span><br>Total Question Solved->400</li>
+                          <li><span>Devolopement</span><br>Still NewBie/Freshers</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contentes" id="education">
+                        <ul>
+                          <li><span>2022 - current(2025)</span><br>Pursuing B-Tech in Cse From MAKAUT</li>
+                          <li><span>2019 - 2022</span><br>Have done my Diploma in Civil Engineering From AJC Bose
+                            Polytechnic College</li>
+                          <li><span>Schooling</span><br>Have Done My Schooling From Dhanyakuria High School</li>
+                        </ul>
+                      </div>
+                    </div>
+            </div>
+        </div>
+        
+
+
+
+    </div>
+
+  </section>
+
+    <section id="experience1">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i style="color:rgb(255, 0, 144);font-size: 1.5rem;margin-top:5px"class="fa-brands fa-html5"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                  <i style=" color:rgb(255, 0, 144);font-size: 1.5rem;margin-top:5px"  class="fa-brands fa-css3"></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                
+                <i style=" color:rgb(255, 0, 144);font-size: 1.5rem;margin-top:5px" class="fa-brands fa-js"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                  <i style="color:rgb(255, 0, 144);font-size: 1.5rem;margin-top:5px" class="fa-brands fa-react"></i>
+
+                <div>
+                  <h3>REACT JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                  <i style="color:rgb(255, 0, 144);font-size: 1.5rem;margin-top:5px" class="fa-brands fa-node-js"></i>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i style="color:rgb(255, 0, 144);font-size: 1.5rem;margin-top:5px" class="fa-brands fa-git-alt"></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://wikipedia-demo-12.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://weather-app-arman.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/60335.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Text-to-speech</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sarman12/Text-to-speech-converter'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://text-to-speech-demo.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="sahaneearman601@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/s-arman/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section> -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+    
+          <div class="contact-left">
+            <h1 class="sub-title" style="font-size:35px"><b style="font-size:45px">Contact</b> Me</h1>
+            <p style="font-size: 20px;"><a href="mailto:sahaneearman601@gmail.com">sahaneearman601@gmail.com
+            </a></p>
+            <!-- <p style="font-size: 20px;"><img src="/assets/telephone.png" width="16px" alt=""> 6294354787</p>
+            <p style="font-size: 20px;"><img src="/assets//location.png" width="16px" alt=""> Visit Me</p> -->
+
+            <div class="sociallinks">
+              <h1 class="sub-title" style="font-size: 25px;"><b
+                  style="font-size:30px;text-align:center">Follow
+                </b>Me On</h1>
+                  <a href=""><img src="/assets/whatsapp.png" alt=""></a>
+                  <a href=""><img src="/assets/facebook.png" alt=""></a>
+                  <a href=""><img src="/assets/instagram.png" alt=""></a>
+                
+                
+            </div>
+            <a href="./assets/resume sahanee 2.pdf" download class="btn2" ><b>Download Cv</b>
+            </a>
+          </div>
+
+    
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="your email" required>
+              <textarea name="messages" id="" cols="30" rows="6" placeholder="Your Massage here"></textarea>
+              <button  type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Designed By The coder All Right Resereved</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhxEWvoqocsoTGK1KPWwa5IsGmJn7AAmc5pvSU0P5Ohwtswdjrldvi9capo9AEK0Vb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+  <script>
+    var tabliks = document.getElementsByClassName("tab-links");
+    var tabcontentes = document.getElementsByClassName("tab-contentes");
+    function opentab(tabname) {
+      for (tablik of tabliks) {
+        tablik.classList.remove("active-link");
+      }
+      for (tabcontente of tabcontentes) {
+        tabcontente.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add('active-tab');
+    }
+
+
+    var icon=document.getElementById("icon-dark")
+    icon.onclick=function(){
+      document.body.classList.toggle("dark-theme");
+    }
+
+
+  </script>
+</html>
